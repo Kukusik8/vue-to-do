@@ -22,10 +22,13 @@
         @click="title = 'Я поменялся'"
         >Изменить заголовок    
     </button> -->
+    <div class="form-control">
+        <input type="text" @keyup.enter="addItem" ref="myInput">
+    </div>
     <ul class="list" v-if="items.length">
         <li class="list-item"
-        v-for="(item,index) in evenItems"
-        @click="items.splice(index,1)"
+        v-for="(item,index) in items"
+        @click.right="items.splice(index,1)"
         :key="item "
         >
         <strong>{{item}}</strong>
