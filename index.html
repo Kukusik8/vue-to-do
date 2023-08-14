@@ -24,7 +24,7 @@
     </button> -->
     <ul class="list" v-if="items.length">
         <li class="list-item"
-        v-for="(item,index) in items"
+        v-for="(item,index) in evenItems"
         @click="items.splice(index,1)"
         :key="item "
         >
