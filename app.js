@@ -38,5 +38,5 @@ inputValue(value){
 }
 
 
-Vue.createApp(App).mount('#app')
+// Vue.createApp(App).mount('#app')
 
