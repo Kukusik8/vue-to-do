@@ -26,13 +26,16 @@
         <li class="list-item"
         v-for="(item,index) in items"
         @click="items.splice(index,1)"
+        :key="item "
         >
         <strong>{{item}}</strong>
         
     <!-- <li class="list-item" v-for="(value,idx) in person">
         <strong>{{idx}}</strong> {{value}} -->
-    </li>
+        <input type="text" @click.stop> 
+        </li>
     </ul>
+
     <h3 v-show="items.length===0">Пуфто</h3>
 
     </div>
